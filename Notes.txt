@@ -1,0 +1,20 @@
+we get a list of events from pygame so we have to go through them with a for loop
+
+A Display surface is the canvas that gets drawn on
+    there can only be one display surface
+
+A surface is an image
+    unlimited
+    requires a display surface
+
+blit : block image treansfer
+    display_surface.blit(surface,position)
+    top left position
+
+
+Rectangle created from the surface
+
+
+surf=Pygame.image.load('path')
+rect=surf.get_rect(rect_pos)
+inside the blit you essentially map the surface to the rectangle
