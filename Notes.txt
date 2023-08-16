@@ -1,3 +1,10 @@
+Gmae Idea:
+You have a space base that you are trying to defend from a meteor shower
+you have a canon that fires sequentially and you have to set the angle with the angle sensor 
+the more meteors you hit the higher your score gets
+the more you last the more difficult it gets 
+
+
 we get a list of events from pygame so we have to go through them with a for loop
 
 A Display surface is the canvas that gets drawn on
@@ -18,3 +25,29 @@ Rectangle created from the surface
 surf=Pygame.image.load('path')
 rect=surf.get_rect(rect_pos)
 inside the blit you essentially map the surface to the rectangle
+
+
+
+Arduino Code Notes:
+
+Rotating Clockwise:
+    angle reading decreases
+
+    Complete Revolution when angle gets to zero and is counted as a negative Revolution
+    -ve number keeps getting larger until it reaches -180 then it jumps to 180 and keeps going towards zero
+
+
+rotating anticlockwise:
+    angle reading increases
+    angle keeps increasing until it reaches 180 then immediately jumps to -180 then keeps increasing towards zero
+
+there is a point at which the angle value jumps from -180 to 180
+
+
+Plan: let the kit tell us whether there is a :
+
+                                                 turn clockwise 
+                                                 turn anticlockwise
+
+
+
